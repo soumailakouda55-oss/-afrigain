@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082c49">
+  <meta name="description" content="AFRIGAIN : achetez, partagez et vendez des produits numériques en Afrique francophone.">
+  <title>AFRIGAIN — Le digital qui vous fait avancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bleu:#082c49;--bleu2:#104a6b;--vert:#16845c;--jaune:#f5c84b;--creme:#f7f8f4;--texte:#173148;--gris:#657786;--blanc:#fff;--ombre:0 20px 60px rgba(8,44,73,.12)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--texte);font-family:'DM Sans',sans-serif;background:var(--creme)}a{color:inherit;text-decoration:none}.conteneur{width:min(1160px,calc(100% - 48px));margin:auto}
+    .annonce{background:var(--bleu);color:#eaf4f5;text-align:center;padding:10px 16px;font-size:13px;letter-spacing:.02em}.annonce strong{color:var(--jaune)}
+    header{background:rgba(255,255,255,.96);border-bottom:1px solid #e8eee9;position:sticky;top:0;z-index:10;backdrop-filter:blur(14px)}.barre{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.marque{display:flex;align-items:center;gap:11px;font:800 21px Manrope,sans-serif;letter-spacing:.055em;color:var(--bleu)}.sigle{width:37px;height:37px;border-radius:12px;background:var(--vert);color:white;display:grid;place-items:center;font:800 17px Manrope;box-shadow:0 7px 18px #16845c33}.navigation{display:flex;align-items:center;gap:32px;font-size:14px;font-weight:600;color:#435768}.navigation a:hover{color:var(--vert)}.actions{display:flex;align-items:center;gap:11px}.bouton{min-height:44px;padding:0 19px;border-radius:9px;display:inline-flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;transition:transform .2s,box-shadow .2s,background .2s}.bouton:hover{transform:translateY(-2px)}.bouton-contour{border:1px solid #dce5e2;background:white;color:var(--bleu)}.bouton-vert{background:var(--vert);color:white;box-shadow:0 8px 18px #16845c2b}.bouton-vert:hover{background:#106c4a;box-shadow:0 12px 24px #16845c40}
+    .hero{padding:76px 0 84px;background:radial-gradient(ellipse at 86% 4%,#e0efe2 0,transparent 35%),linear-gradient(180deg,#fff 0%,#f7f8f4 100%);overflow:hidden}.hero-interieur{display:grid;grid-template-columns:1fr .95fr;align-items:center;gap:68px}.pastille{display:inline-flex;align-items:center;gap:9px;border-radius:99px;background:#e8f4ed;color:#14744f;padding:9px 14px;font-size:12px;font-weight:700;letter-spacing:.04em}.pastille i{width:7px;height:7px;background:var(--vert);border-radius:50%}.hero h1{font:800 clamp(42px,5vw,66px)/1.07 Manrope,sans-serif;color:var(--bleu);letter-spacing:-.055em;margin:22px 0 20px;max-width:620px}.hero h1 span{color:var(--vert)}.intro{max-width:510px;color:var(--gris);font-size:17px;line-height:1.75;margin:0 0 29px}.hero-boutons{display:flex;gap:12px;flex-wrap:wrap}.hero-boutons .bouton{min-height:52px;padding:0 23px}.confiance{display:flex;align-items:center;gap:14px;margin-top:30px;color:var(--gris);font-size:13px}.avatars{display:flex;padding-left:4px}.avatars img{width:31px;height:31px;border:2px solid white;border-radius:50%;object-fit:cover;margin-left:-5px}.confiance strong{color:var(--bleu)}
+    .visuel{height:440px;position:relative}.photo-principale{position:absolute;inset:10px 28px 20px 12px;border-radius:24px;overflow:hidden;box-shadow:var(--ombre)}.photo-principale img{width:100%;height:100%;object-fit:cover;object-position:center}.photo-principale:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(8,44,73,.68))}.legende-photo{position:absolute;bottom:25px;left:28px;color:white;z-index:1}.legende-photo small{opacity:.82;font-size:12px}.legende-photo strong{display:block;font:700 19px Manrope;margin-top:5px}.carte-flottante{position:absolute;background:white;border-radius:15px;box-shadow:0 16px 40px #082c4920;padding:16px 18px;z-index:2}.carte-ventes{top:38px;right:0;min-width:174px}.carte-ligne{display:flex;align-items:center;gap:10px}.icone{width:36px;height:36px;display:grid;place-items:center;background:#e7f5ed;color:var(--vert);border-radius:11px;font-size:18px}.carte-flottante small{color:var(--gris);font-size:11px}.carte-flottante strong{display:block;color:var(--bleu);font:700 16px Manrope;margin-top:3px}.carte-confiance{left:-15px;bottom:0;display:flex;gap:11px;align-items:center}.carte-confiance .icone{background:#fff5d9;color:#b48608}.carte-confiance strong{font-size:13px}.carte-confiance small{display:block;margin-top:4px}
+    .bandeau{background:white;border-top:1px solid #edf0ec;border-bottom:1px solid #edf0ec}.bandeau-interieur{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:22px 0;color:#6b7b84;font-size:13px}.bandeau-label{font-weight:700;color:var(--bleu)}.pays{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:10px}.pays span{padding:7px 11px;background:#f5f7f5;border-radius:7px;color:#425969;font-weight:600;font-size:12px}
+    section{padding:88px 0}.entete-section{text-align:center;max-width:650px;margin:0 auto 43px}.sur-titre{color:var(--vert);font-size:12px;font-weight:800;letter-spacing:.11em;text-transform:uppercase}.entete-section h2{font:800 clamp(30px,3.8vw,42px)/1.18 Manrope,sans-serif;letter-spacing:-.04em;color:var(--bleu);margin:12px 0}.entete-section p{color:var(--gris);line-height:1.7;margin:0}.etapes{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.etape{background:white;padding:28px;border:1px solid #edf0ec;border-radius:16px;box-shadow:0 8px 25px #082c4908}.numero{width:44px;height:44px;display:grid;place-items:center;border-radius:13px;background:#e9f4ed;color:var(--vert);font:800 16px Manrope}.etape h3{font:700 18px Manrope;color:var(--bleu);margin:21px 0 9px}.etape p{color:var(--gris);font-size:14px;line-height:1.7;margin:0}
+    .appel{padding:0 0 88px}.appel-carte{background:var(--bleu);border-radius:22px;padding:48px 56px;display:flex;align-items:center;justify-content:space-between;gap:30px;position:relative;overflow:hidden}.appel-carte:after{content:"";position:absolute;width:300px;height:300px;border:1px solid #ffffff18;border-radius:50%;right:15%;top:-200px;box-shadow:0 0 0 35px #ffffff08,0 0 0 70px #ffffff06}.appel-texte{position:relative;z-index:1;max-width:610px}.appel-texte h2{color:white;font:800 30px/1.2 Manrope;margin:0 0 12px;letter-spacing:-.03em}.appel-texte p{color:#c3d2dc;line-height:1.7;margin:0}.appel .bouton{position:relative;z-index:1;white-space:nowrap;background:var(--jaune);color:var(--bleu);min-height:50px}
+    footer{background:white;border-top:1px solid #e9eee9;padding:27px 0}.pied{display:flex;align-items:center;justify-content:space-between;gap:18px;color:#72818a;font-size:12px}.pied .marque{font-size:16px}.pied .sigle{width:29px;height:29px;border-radius:9px;font-size:13px}
+    @media(max-width:850px){.navigation{gap:17px}.hero-interieur{gap:28px}.visuel{height:380px}.photo-principale{inset:18px 14px 20px 8px}.carte-confiance{left:-2px}.hero{padding:58px 0 66px}}
+    @media(max-width:680px){.conteneur{width:min(100% - 36px,520px)}.annonce{font-size:11px}.barre{height:67px}.navigation{display:none}.actions .bouton-contour{display:none}.marque{font-size:19px}.hero{padding:48px 0 48px}.hero-interieur{grid-template-columns:1fr;gap:36px}.hero h1{font-size:46px}.intro{font-size:15px}.visuel{height:350px;margin:0 6px}.photo-principale{inset:8px 15px 19px 12px}.carte-ventes{right:0;top:20px}.carte-confiance{left:-5px;bottom:0}.bandeau-interieur{align-items:flex-start;flex-direction:column;gap:13px;padding:17px 0}.pays{justify-content:flex-start}.pays span{font-size:11px}.bandeau-label{font-size:12px}section{padding:64px 0}.etapes{grid-template-columns:1fr;gap:13px}.etape{padding:23px}.entete-section{margin-bottom:29px}.appel{padding:0 0 62px}.appel-carte{padding:32px 25px;align-items:flex-start;flex-direction:column}.appel-texte h2{font-size:26px}.pied{align-items:flex-start;flex-direction:column}.hero-boutons .bouton{flex:1}.confiance{font-size:12px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="annonce">Une nouvelle façon d’avancer grâce au digital <strong>— partout en Afrique francophone</strong></div>
+  <header>
+    <div class="conteneur barre">
+      <a class="marque" href="#accueil" aria-label="AFRIGAIN, accueil"><span class="sigle">A</span> AFRIGAIN</a>
+      <nav class="navigation" aria-label="Navigation principale"><a href="#fonctionnement">Comment ça marche</a><a href="#avantages">Nos avantages</a><a href="#contact">Nous contacter</a></nav>
+      <div class="actions"><a class="bouton bouton-contour" href="#contact">Se connecter</a><a class="bouton bouton-vert" href="#contact">Nous rejoindre</a></div>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="accueil">
+      <div class="conteneur hero-interieur">
+        <div>
+          <span class="pastille"><i></i> LE DIGITAL À PORTÉE DE MAIN</span>
+          <h1>Le digital qui vous fait <span>avancer.</span></h1>
+          <p class="intro">Découvrez des ressources numériques utiles, partagez celles qui vous inspirent et développez vos projets à votre rythme avec AFRIGAIN.</p>
+          <div class="hero-boutons"><a class="bouton bouton-vert" href="#fonctionnement">Découvrir AFRIGAIN <span aria-hidden="true">&nbsp;→</span></a><a class="bouton bouton-contour" href="#avantages">En savoir plus</a></div>
+          <div class="confiance"><div class="avatars" aria-hidden="true"><img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=80&q=80" alt=""><img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=80&q=80" alt=""><img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=80&q=80" alt=""></div><span>Une communauté qui <strong>grandit ensemble</strong></span></div>
+        </div>
+        <div class="visuel" aria-label="Entrepreneurs africains réunis autour d’un projet">
+          <div class="photo-principale"><img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1200&q=85" alt="Équipe de professionnels échangeant autour d’un projet numérique"><div class="legende-photo"><small>Des idées, des outils, de nouvelles possibilités</small><strong>Construisons la suite ensemble.</strong></div></div>
+          <div class="carte-flottante carte-ventes"><div class="carte-ligne"><span class="icone" aria-hidden="true">↗</span><div><small>Votre prochain projet</small><strong>Commence ici</strong></div></div></div>
+          <div class="carte-flottante carte-confiance"><span class="icone" aria-hidden="true">✦</span><div><strong>Le savoir à portée de clic</strong><small>Des ressources pensées pour vous</small></div></div>
+        </div>
+      </div>
+    </section>
+    <div class="bandeau"><div class="conteneur bandeau-interieur"><span class="bandeau-label">Une plateforme pour l’Afrique francophone</span><div class="pays"><span>Burkina Faso</span><span>Côte d’Ivoire</span><span>Sénégal</span><span>Cameroun</span><span>Bénin</span><span>Togo</span><span>Mali</span></div></div></div>
+    <section id="fonctionnement">
+      <div class="conteneur">
+        <div class="entete-section"><span class="sur-titre">Simple et accessible</span><h2>Trois façons de faire avancer vos projets</h2><p>AFRIGAIN rassemble des ressources numériques et des opportunités de partage au même endroit.</p></div>
+        <div class="etapes" id="avantages">
+          <article class="etape"><span class="numero">01</span><h3>Explorez des ressources</h3><p>Parcourez des guides, des formations et des contenus numériques pour apprendre et développer vos compétences.</p></article>
+          <article class="etape"><span class="numero">02</span><h3>Choisissez ce qui vous inspire</h3><p>Trouvez des contenus adaptés à vos objectifs et accédez à des ressources utiles pour vos projets.</p></article>
+          <article class="etape"><span class="numero">03</span><h3>Partagez avec votre réseau</h3><p>Recommandez les ressources qui vous plaisent et découvrez les possibilités de partenariat proposées sur la plateforme.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="appel" id="contact"><div class="conteneur"><div class="appel-carte"><div class="appel-texte"><h2>Prêt à découvrir de nouvelles possibilités&nbsp;?</h2><p>Rejoignez une communauté tournée vers le savoir, le partage et les projets numériques en Afrique francophone.</p></div><a class="bouton" href="mailto:bonjour@afrigain.com">Nous contacter&nbsp; →</a></div></div></section>
+  </main>
+  <footer><div class="conteneur pied"><a class="marque" href="#accueil"><span class="sigle">A</span> AFRIGAIN</a><span>© 2026 AFRIGAIN. Tous droits réservés.</span><span>Achète, partage, vends et gagne avec le digital.</span></div></footer>
+</body>
+</html>
