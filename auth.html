@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#082c49">
+  <meta name="description" content="Créez votre compte AFRIGAIN ou connectez-vous à votre espace personnel.">
+  <title>Connexion et inscription — AFRIGAIN</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--bleu:#082c49;--bleu2:#104a6b;--vert:#16845c;--jaune:#f5c84b;--fond:#f5f7f4;--texte:#173148;--gris:#657786;--blanc:#fff;--bord:#e2e9e5;--ombre:0 24px 70px rgba(8,44,73,.14)}
+    *{box-sizing:border-box}body{margin:0;min-height:100vh;background:var(--fond);font-family:'DM Sans',sans-serif;color:var(--texte)}a{color:inherit;text-decoration:none}button,input{font:inherit}.annonce{background:var(--bleu);color:#eaf4f5;text-align:center;padding:10px 15px;font-size:12px}.annonce strong{color:var(--jaune)}
+    header{height:76px;background:#fff;border-bottom:1px solid #e8eee9}.barre{width:min(1160px,calc(100% - 40px));height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}.marque{display:flex;align-items:center;gap:10px;color:var(--bleu);font:800 20px Manrope,sans-serif;letter-spacing:.05em}.sigle{width:36px;height:36px;border-radius:11px;display:grid;place-items:center;background:var(--vert);color:white;box-shadow:0 7px 18px #16845c33}.retour{font-size:14px;font-weight:600;color:#526779}.retour:hover{color:var(--vert)}
+    main{min-height:calc(100vh - 126px);display:grid;place-items:center;padding:50px 20px}.ensemble{width:min(100%,1020px);min-height:610px;display:grid;grid-template-columns: .92fr 1.08fr;background:#fff;border:1px solid #edf0ec;border-radius:24px;overflow:hidden;box-shadow:var(--ombre)}
+    .panneau-visuel{position:relative;padding:46px;color:#fff;background:linear-gradient(160deg,rgba(8,44,73,.92),rgba(8,44,73,.48)),url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1100&q=85') center/cover;display:flex;flex-direction:column;justify-content:space-between;min-height:610px}.panneau-visuel:after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(transparent,rgba(8,35,55,.34));pointer-events:none}.signature,.promesse{position:relative;z-index:1}.signature{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#d4e5e8}.signature span{display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--jaune);margin-right:8px}.promesse h1{font:800 39px/1.16 Manrope,sans-serif;letter-spacing:-.04em;margin:0 0 15px}.promesse h1 span{color:#7ee0ad}.promesse p{max-width:370px;color:#e0e9ed;font-size:15px;line-height:1.75;margin:0}.citation{position:relative;z-index:1;border-top:1px solid #ffffff3d;padding-top:20px;color:#eff5f5;font-size:13px;line-height:1.65}.citation strong{display:block;color:white;margin-top:8px}
+    .panneau-formulaire{padding:50px clamp(28px,6vw,72px);display:flex;flex-direction:column;justify-content:center}.surtitre{color:var(--vert);font-size:11px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}.titre-formulaire{font:800 30px/1.2 Manrope,sans-serif;letter-spacing:-.04em;color:var(--bleu);margin:10px 0 9px}.description{font-size:14px;color:var(--gris);line-height:1.65;margin:0 0 24px}.onglets{display:grid;grid-template-columns:1fr 1fr;padding:5px;background:#f1f5f2;border-radius:10px;margin-bottom:23px}.onglet{border:0;border-radius:7px;background:transparent;min-height:41px;color:#637381;font-size:13px;font-weight:700;cursor:pointer}.onglet[aria-selected="true"]{background:#fff;color:var(--bleu);box-shadow:0 2px 8px #082c4912}.champ{margin-bottom:15px}.champ label{display:block;font-size:12px;font-weight:700;color:#354d5e;margin-bottom:7px}.champ input{width:100%;height:47px;border:1px solid var(--bord);border-radius:8px;padding:0 13px;color:var(--texte);background:#fff;outline:none;transition:border .18s,box-shadow .18s}.champ input::placeholder{color:#a1adb5}.champ input:focus{border-color:var(--vert);box-shadow:0 0 0 3px #16845c1a}.mot-de-passe{position:relative}.mot-de-passe input{padding-right:72px}.voir-mot{position:absolute;right:10px;top:50%;transform:translateY(-50%);border:0;background:transparent;color:var(--vert);font-size:11px;font-weight:700;cursor:pointer;padding:7px}.ligne-aide{display:flex;justify-content:flex-end;margin:-3px 0 18px}.lien{border:0;padding:0;background:none;color:var(--vert);font-size:12px;font-weight:700;cursor:pointer}.lien:hover{text-decoration:underline}.bouton-principal{width:100%;min-height:49px;border:0;border-radius:9px;background:var(--vert);color:#fff;font-size:14px;font-weight:700;cursor:pointer;box-shadow:0 8px 18px #16845c2b;transition:background .2s,transform .2s}.bouton-principal:hover{background:#106c4a;transform:translateY(-1px)}.bouton-principal:disabled{opacity:.65;cursor:wait;transform:none}.note-securite{margin:17px 0 0;text-align:center;color:#73818b;font-size:11px;line-height:1.6}.message{display:none;margin:0 0 17px;border-radius:8px;padding:11px 13px;font-size:12px;line-height:1.55}.message.visible{display:block}.message.erreur{background:#fff0ee;color:#a3372c;border:1px solid #f4d4d0}.message.succes{background:#edf8f1;color:#17633f;border:1px solid #d4ebdc}.message.info{background:#eff6fb;color:#245a78;border:1px solid #d7e8f3}.pied{padding:0 20px 24px;text-align:center;color:#7a8991;font-size:11px}.masque{display:none!important}.consentement{font-size:11px;line-height:1.6;color:#78868e;margin:2px 0 16px}.consentement a{color:var(--vert);font-weight:700}
+    @media(max-width:760px){.ensemble{grid-template-columns:1fr;max-width:510px;min-height:0}.panneau-visuel{min-height:225px;padding:27px 30px;background-position:center 42%}.promesse h1{font-size:28px;max-width:390px}.promesse p{font-size:13px;max-width:400px}.citation{display:none}.signature{margin-bottom:32px}.panneau-formulaire{padding:34px 30px 38px}.retour{font-size:12px}}
+    @media(max-width:430px){header{height:66px}.barre{width:calc(100% - 30px)}.marque{font-size:18px}.retour{max-width:130px;text-align:right}main{padding:24px 14px}.panneau-visuel{min-height:196px;padding:23px}.panneau-formulaire{padding:28px 22px 30px}.titre-formulaire{font-size:27px}.description{font-size:13px}.annonce{font-size:11px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <div class="annonce">Bienvenue dans votre espace <strong>AFRIGAIN</strong></div>
+  <header><div class="barre"><a class="marque" href="index.html" aria-label="AFRIGAIN, page d’accueil"><span class="sigle">A</span> AFRIGAIN</a><a class="retour" href="index.html">← Retour à l’accueil</a></div></header>
+  <main>
+    <div class="ensemble">
+      <aside class="panneau-visuel" aria-label="Présentation d’AFRIGAIN">
+        <div class="signature"><span></span>Le digital à portée de main</div>
+        <div class="promesse"><h1>Vos projets méritent de <span>grandir.</span></h1><p>Accédez à votre espace personnel et retrouvez des ressources numériques pour avancer à votre rythme.</p></div>
+        <div class="citation">Un espace conçu pour apprendre, partager et développer vos projets.<strong>AFRIGAIN · Afrique francophone</strong></div>
+      </aside>
+      <section class="panneau-formulaire" aria-labelledby="titre">
+        <span class="surtitre">Votre espace personnel</span>
+        <h2 class="titre-formulaire" id="titre">Bienvenue chez AFRIGAIN</h2>
+        <p class="description" id="description">Connectez-vous ou créez votre compte gratuit pour commencer.</p>
+        <div class="onglets" role="tablist" aria-label="Choisir une action"><button class="onglet" id="onglet-connexion" type="button" role="tab" aria-selected="true">Connexion</button><button class="onglet" id="onglet-inscription" type="button" role="tab" aria-selected="false">Créer un compte</button></div>
+        <div class="message" id="message" role="status" aria-live="polite"></div>
+        <form id="formulaire" novalidate>
+          <div class="champ masque" id="champ-nom"><label for="nom">Nom complet</label><input id="nom" name="nom" type="text" autocomplete="name" placeholder="Ex. Aïcha Traoré" minlength="2"></div>
+          <div class="champ"><label for="courriel">Adresse électronique</label><input id="courriel" name="courriel" type="email" autocomplete="email" placeholder="vous@exemple.com" required></div>
+          <div class="champ" id="champ-mot-de-passe"><label for="mot-de-passe">Mot de passe</label><div class="mot-de-passe"><input id="mot-de-passe" name="mot-de-passe" type="password" autocomplete="current-password" placeholder="Au moins 8 caractères" minlength="8" required><button class="voir-mot" id="voir-mot" type="button" aria-label="Afficher le mot de passe">Afficher</button></div></div>
+          <div class="champ masque" id="champ-nouveau-mot"><label for="nouveau-mot">Nouveau mot de passe</label><div class="mot-de-passe"><input id="nouveau-mot" name="nouveau-mot" type="password" autocomplete="new-password" placeholder="Au moins 8 caractères" minlength="8"><button class="voir-mot" id="voir-nouveau" type="button" aria-label="Afficher le nouveau mot de passe">Afficher</button></div></div>
+          <div class="ligne-aide" id="ligne-recuperation"><button class="lien" id="recuperation" type="button">Mot de passe oublié ?</button></div>
+          <p class="consentement masque" id="consentement">En créant votre compte, vous acceptez nos <a href="#conditions">conditions d’utilisation</a> et notre politique de confidentialité.</p>
+          <button class="bouton-principal" id="soumettre" type="submit">Se connecter</button>
+        </form>
+        <p class="note-securite">Vos informations sont protégées et ne sont jamais affichées publiquement.</p>
+      </section>
+    </div>
+  </main>
+  <div class="pied">© 2026 AFRIGAIN · Achète, partage, vends et gagne avec le digital.</div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script>
+    // Remplacez ces deux valeurs par celles de votre projet Supabase.
+    const ADRESSE_SUPABASE = 'https://VOTRE-PROJET.supabase.co';
+    const CLE_PUBLIQUE_SUPABASE = 'VOTRE_CLE_PUBLIQUE_SUPABASE';
+    // Cette page membre sera ajoutée dans une prochaine étape du projet.
+    const PAGE_MEMBRE = 'tableau-de-bord.html';
+
+    const formulaire = document.getElementById('formulaire');
+    const message = document.getElementById('message');
+    const titre = document.getElementById('titre');
+    const description = document.getElementById('description');
+    const nom = document.getElementById('nom');
+    const courriel = document.getElementById('courriel');
+    const motDePasse = document.getElementById('mot-de-passe');
+    const bouton = document.getElementById('soumettre');
+    const clientPret = window.supabase && ADRESSE_SUPABASE.startsWith('https://') && !ADRESSE_SUPABASE.includes('VOTRE-PROJET') && CLE_PUBLIQUE_SUPABASE.length > 20 && !CLE_PUBLIQUE_SUPABASE.includes('VOTRE_');
+    const client = clientPret ? window.supabase.createClient(ADRESSE_SUPABASE, CLE_PUBLIQUE_SUPABASE, {auth:{persistSession:true,autoRefreshToken:true,detectSessionInUrl:true}}) : null;
+    let mode = 'connexion';
+
+    function afficherMessage(texte, type='info') { message.textContent=texte; message.className='message visible '+type; }
+    function effacerMessage() { message.textContent=''; message.className='message'; }
+    function basculerMode(nouveauMode) {
+      mode=nouveauMode;
+      const inscription=mode==='inscription';
+      const recuperation=mode==='recuperation';
+      const nouveauMot=mode==='nouveau-mot';
+      document.getElementById('onglet-connexion').setAttribute('aria-selected',String(mode==='connexion'));
+      document.getElementById('onglet-inscription').setAttribute('aria-selected',String(inscription));
+      document.getElementById('champ-nom').classList.toggle('masque',!inscription);
+      document.getElementById('champ-mot-de-passe').classList.toggle('masque',recuperation||nouveauMot);
+      document.getElementById('champ-nouveau-mot').classList.toggle('masque',!nouveauMot);
+      document.getElementById('ligne-recuperation').classList.toggle('masque',inscription||recuperation||nouveauMot);
+      document.getElementById('consentement').classList.toggle('masque',!inscription);
+      nom.required=inscription;
+      courriel.disabled=nouveauMot;
+      motDePasse.required=!recuperation&&!nouveauMot;
+      document.getElementById('nouveau-mot').required=nouveauMot;
+      bouton.textContent=inscription?'Créer mon compte':recuperation?'Envoyer le lien de réinitialisation':nouveauMot?'Enregistrer mon nouveau mot de passe':'Se connecter';
+      titre.textContent=inscription?'Rejoignez AFRIGAIN':recuperation?'Réinitialiser votre mot de passe':nouveauMot?'Choisissez un nouveau mot de passe':'Bienvenue chez AFRIGAIN';
+      description.textContent=inscription?'Créez gratuitement votre compte pour accéder à votre espace personnel.':recuperation?'Saisissez votre adresse électronique pour recevoir un lien sécurisé.':nouveauMot?'Choisissez un nouveau mot de passe pour protéger votre compte.':'Connectez-vous ou créez votre compte gratuit pour commencer.';
+      effacerMessage();
+    }
+    document.getElementById('onglet-connexion').addEventListener('click',()=>{courriel.disabled=false;basculerMode('connexion')});
+    document.getElementById('onglet-inscription').addEventListener('click',()=>{courriel.disabled=false;basculerMode('inscription')});
+    document.getElementById('recuperation').addEventListener('click',()=>basculerMode('recuperation'));
+    function basculerVisibilite(champ,commande){const visible=champ.type==='password';champ.type=visible?'text':'password';commande.textContent=visible?'Masquer':'Afficher';commande.setAttribute('aria-label',(visible?'Masquer':'Afficher')+' le mot de passe');}
+    document.getElementById('voir-mot').addEventListener('click',()=>basculerVisibilite(motDePasse,document.getElementById('voir-mot')));
+    document.getElementById('voir-nouveau').addEventListener('click',()=>basculerVisibilite(document.getElementById('nouveau-mot'),document.getElementById('voir-nouveau')));
+    document.getElementById('nouveau-mot').addEventListener('input',()=>{if(document.getElementById('nouveau-mot').value.length>=8)document.getElementById('nouveau-mot').setCustomValidity('');});
+
+    function traduireErreur(erreur) {
+      const texte=(erreur&&erreur.message?erreur.message:'').toLowerCase();
+      if(!client)return 'La connexion sécurisée n’est pas encore configurée. Renseignez l’adresse de votre projet et sa clé publique Supabase dans ce fichier.';
+      if(texte.includes('invalid login credentials'))return 'Adresse électronique ou mot de passe incorrect.';
+      if(texte.includes('user already registered'))return 'Un compte existe déjà avec cette adresse électronique. Essayez de vous connecter.';
+      if(texte.includes('password should be at least'))return 'Le mot de passe doit contenir au moins 8 caractères.';
+      if(texte.includes('email not confirmed'))return 'Confirmez votre adresse électronique depuis le lien reçu avant de vous connecter.';
+      if(texte.includes('rate limit'))return 'Trop de tentatives. Patientez quelques instants avant de réessayer.';
+      if(texte.includes('network')||texte.includes('fetch'))return 'La connexion au service est momentanément indisponible. Vérifiez votre connexion puis réessayez.';
+      if(texte.includes('same password'))return 'Choisissez un mot de passe différent de votre ancien mot de passe.';
+      return 'Une erreur est survenue. Vérifiez les informations saisies puis réessayez.';
+    }
+
+    formulaire.addEventListener('submit',async evenement=>{
+      evenement.preventDefault();effacerMessage();
+      if(!client){afficherMessage(traduireErreur(), 'erreur');return;}
+      if(!formulaire.reportValidity())return;
+      const courrielSaisi=courriel.value.trim();
+      bouton.disabled=true;
+      try {
+        if(mode==='inscription'){
+          const {data,error}=await client.auth.signUp({email:courrielSaisi,password:motDePasse.value,options:{data:{full_name:nom.value.trim()},emailRedirectTo:window.location.href.split('#')[0]}});
+          if(error)throw error;
+          if(data.session){afficherMessage('Votre compte est créé. Votre espace personnel va s’ouvrir.', 'succes');setTimeout(()=>window.location.assign(PAGE_MEMBRE),900);}
+          else afficherMessage('Votre demande est enregistrée. Consultez votre messagerie pour confirmer votre adresse électronique, puis connectez-vous.', 'succes');
+        } else if(mode==='connexion'){
+          const {error}=await client.auth.signInWithPassword({email:courrielSaisi,password:motDePasse.value});
+          if(error)throw error;
+          afficherMessage('Connexion réussie. Votre espace personnel va s’ouvrir.', 'succes');
+          setTimeout(()=>window.location.assign(PAGE_MEMBRE),500);
+        } else if(mode==='recuperation'){
+          const {error}=await client.auth.resetPasswordForEmail(courrielSaisi,{redirectTo:window.location.href.split('#')[0]});
+          if(error)throw error;
+          afficherMessage('Si un compte correspond à cette adresse, un lien sécurisé vient de vous être envoyé.', 'succes');
+        } else if(mode==='nouveau-mot'){
+          const {error}=await client.auth.updateUser({password:document.getElementById('nouveau-mot').value});
+          if(error)throw error;
+          afficherMessage('Votre mot de passe a été modifié. Votre espace personnel va s’ouvrir.', 'succes');
+          setTimeout(()=>window.location.assign(PAGE_MEMBRE),900);
+        }
+      } catch(erreur){afficherMessage(traduireErreur(erreur),'erreur');}
+      finally{bouton.disabled=false;}
+    });
+
+    if(client){
+      client.auth.onAuthStateChange((evenement,session)=>{
+        if(evenement==='PASSWORD_RECOVERY'){basculerMode('nouveau-mot');afficherMessage('Choisissez un nouveau mot de passe pour votre compte.','info');}
+        else if(evenement==='SIGNED_IN'&&session&&mode==='connexion'){
+          afficherMessage('Connexion réussie. Votre espace personnel va s’ouvrir.','succes');
+          setTimeout(()=>window.location.assign(PAGE_MEMBRE),500);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
